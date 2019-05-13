@@ -6,7 +6,7 @@
         
         </ul>
         <hr>
-        <book-form @addBook="apendBook"></book-form>
+        <book-form @addBook="appendBook"></book-form>
     </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
         
     },
     methods:{
-        apendBook(bookTitle, bookAuthor){
+        appendBook(bookTitle, bookAuthor){
             this.books.push({title: bookTitle, author: bookAuthor});
         }
     }
